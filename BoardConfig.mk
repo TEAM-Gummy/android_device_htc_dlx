@@ -32,7 +32,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/htc/dlx/include
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon-vfpv4 -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon-vfpv4 -mfloat-abi=softfp
-
+TARGET_GCC_VERSION_EXP := 4.7
 # Assert
 TARGET_OTA_ASSERT_DEVICE := dlx
 
@@ -50,7 +50,6 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=dlx user_
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := cyanogenmod_dlx_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/m7
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true
